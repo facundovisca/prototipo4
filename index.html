@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Generador de Familias - Facundo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+</head>
+<body>
+
+  <main class="main-container">
+    <div id="canvas-holder"></div>
+
+    <aside class="ui-panel">
+      <h2>Controles</h2>
+      <hr>
+      
+      <div class="control-group">
+        <label for="selectorFamilia">Identidad Visual</label>
+        <select id="selectorFamilia">
+          <option value="azar">Al azar (Mix + Generativa)</option>
+          <option value="0">Familia 1</option>
+          <option value="1">Familia 2</option>
+          <option value="2">Familia 3</option>
+          <option value="3">Familia 4</option>
+        </select>
+      </div>
+
+      <button id="btnGenerar">Generar Nueva Obra</button>
+      
+      <div class="info-footer">
+        <p>Presioná <strong>R</strong> o <strong>Espacio</strong> para refrescar.</p>
+      </div>
+    </aside>
+  </main>
+
+  <script src="familias.js"></script>
+  <script src="sketch.js"></script>
+</body>
+</html>
